@@ -1,1 +1,135 @@
-<h1>Chào mừng đến với trang web của tôi!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tấn Phát | Producer & Sound Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="slide" id="home">
+        <div class="content">
+            <h1>Nguyễn Tấn Phát</h1>
+            <h2>PRODUCER | SOUND ENGINEER</h2>
+            <p>Crafting Soundscapes & Sonic Masterpieces</p>
+        </div>
+    </section>
+    
+    <section class="slide" id="about">
+        <div class="content">
+            <h2>ABOUT ME</h2>
+            <p>Hi, I’m Nguyễn Tấn Phát, a Music Producer & Sound Engineer with expertise in audio production, mixing, and mastering. I specialize in creating unique soundscapes for artists, films, and media.</p>
+            <h3>Skills</h3>
+            <p>Music Production | Mixing & Mastering | Sound Design | Live Recording</p>
+            <h3>Tools</h3>
+            <p>Ableton Live | FL Studio | Pro Tools | Logic Pro X</p>
+        </div>
+    </section>
+    
+    <section class="slide" id="projects">
+        <div class="content">
+            <h2>PROJECTS</h2>
+            <p>Check out my latest music productions and collaborations.</p>
+        </div>
+    </section>
+    
+    <section class="slide" id="contact">
+        <div class="content">
+            <h2>CONTACT</h2>
+            <p>Email: nguyenphat.producer@gmail.com</p>
+            <p>Phone: 0843158114</p>
+            <p>Socials: <a href="https://facebook.com/nguyenphatproducer">Facebook</a> | <a href="https://instagram.com/nguyenphatmusic">Instagram</a></p>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #0A0F24;
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: #1E1E1E;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul li {
+        display: inline;
+    }
+    nav ul li a {
+        color: #00D1FF;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .slide {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-bottom: 5px solid #00D1FF;
+        filter: contrast(1.2);
+    }
+    #home { background-image: url('IMAGE/music_home.jpg'); }
+    #about { background-image: url('IMAGE/music_about.jpg'); }
+    #projects { background-image: url('IMAGE/music_projects.jpg'); }
+    #contact { background-image: url('IMAGE/music_contact.jpg'); }
+    
+    .content {
+        max-width: 80%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    h1, h2 {
+        margin: 10px 0;
+        font-size: 3em;
+        color: #00D1FF;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    a {
+        color: #00D1FF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
