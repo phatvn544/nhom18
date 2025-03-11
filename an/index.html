@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="slide" id="home">
+        <div class="content">
+            <h1>PORTFOLIO</h1>
+            <h2>VIDEOGRAPHER, CONTENT CREATOR</h2>
+            <p>ANN, 2024</p>
+        </div>
+    </section>
+    
+    <section class="slide" id="about">
+        <div class="content">
+            <h2>ABOUT ME</h2>
+            <p>Hi, I’m Ann, a solo Filmmaker, Video Editor, and Content Creator with over 5 years of experience in producing engaging and creative content across social media, especially in music and entertainment.</p>
+            <h3>Skills</h3>
+            <p>Videography | Photography | Graphic Design | Creative Content</p>
+            <h3>Tools</h3>
+            <p>Adobe Premiere Pro | After Effects | Photoshop | Final Cut Pro</p>
+        </div>
+    </section>
+    
+    <section class="slide" id="projects">
+        <div class="content">
+            <h2>PROJECTS</h2>
+        </div>
+    </section>
+    
+    <section class="slide" id="contact">
+        <div class="content">
+            <h2>CONTACT</h2>
+            <p>Email: dinhthaiwalker@gmail.com</p>
+            <p>Phone: 0843158114</p>
+            <p>Socials: <a href="https://facebook.com/itsjustTA">Facebook</a> | <a href="https://instagram.com/flyinpotatoe">Instagram</a></p>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #D10000;
+    padding: 10px 0;
+    text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul li {
+        display: inline;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .slide {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-bottom: 5px solid #D10000;
+        filter: grayscale(100%) contrast(1.2);
+    }
+    #home { background-image: url('IMAGE/home.jpg'); }
+    #about { background-image: url('IMAGE/about.jpg'); }
+    #projects { background-image: url('IMAGE/project.jpg'); }
+    #contact { background-image: url('contact-bg.jpg'); }
+    
+    .content {
+        max-width: 80%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+    }
+      .content a {
+        color: #1E90FF;
+    }
+    h1, h2 {
+        margin: 10px 0;
+        font-size: 3em;
+        color: white;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    a {
+        color: #D10000;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
